@@ -4,8 +4,8 @@ const Contact = () => {
       <div className="container contact-grid">
         <div className="contact-copy">
           <p className="eyebrow">Contact</p>
-          <h2>Wasiliana nasi kwa huduma ya plumbing Zanzibar</h2>
-          <p>Mtandao, simu, au WhatsApp - tunaweza kusaidia huduma ya dharura, ufungaji, na matengenezo.</p>
+          <h2>Get in touch for plumbing services in Zanzibar</h2>
+          <p>By phone or WhatsApp — we handle emergencies, installations, and maintenance.</p>
           <div className="contact-details">
             <div>
               <h3>Phone / WhatsApp</h3>
@@ -22,21 +22,21 @@ const Contact = () => {
           </div>
           <div className="section-banner">
             <h3>Emergency Service</h3>
-            <p>24/7 service kwa mabomba yaliyovujika, bomba lililovunjika, au mifereji iliyoziba.</p>
-          </div>
+            <p>24/7 emergency response for burst pipes, leaks, and blocked drains.</p>
+          </div>http://localhost:5173/
         </div>
         <div className="contact-card">
-          <h3>Tuma Ujumbe</h3>
+          <h3>Send a Message</h3>
           <form>
-            <label htmlFor="name">Jina Kamili</label>
-            <input id="name" type="text" placeholder="Jina lako" />
-            <label htmlFor="phone">Nambari ya Simu</label>
-            <input id="phone" type="tel" placeholder="Simu au WhatsApp" />
-            <label htmlFor="location">Mahali</label>
-            <input id="location" type="text" placeholder="Mahali ulipo" />
-            <label htmlFor="message">Ujumbe</label>
-            <textarea id="message" rows="5" placeholder="Andika hapa ujumbe wako"></textarea>
-            <button type="submit" className="button button-primary">Tuma Ujumbe</button>
+            <label htmlFor="name">Full Name</label>
+            <input id="name" type="text" placeholder="Your name" />
+            <label htmlFor="phone">Phone Number</label>
+            <input id="phone" type="tel" placeholder="Phone or WhatsApp" />
+            <label htmlFor="location">Location</label>
+            <input id="location" type="text" placeholder="Where are you located?" />
+            <label htmlFor="message">Message</label>
+            <textarea id="message" rows="5" placeholder="Write your message here"></textarea>
+            <button type="submit" className="button button-primary">Send Message</button>
           </form>
         </div>
       </div>

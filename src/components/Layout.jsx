@@ -1,6 +1,20 @@
 import { NavLink, Outlet } from 'react-router-dom';
 
 function Layout() {
+  const openWhatsApp = (e) => {
+    e.preventDefault();
+    const phone = '255685848908';
+    const text = 'Hello Mdosi';
+    const appLink = `whatsapp://send?phone=${phone}&text=${encodeURIComponent(text)}`;
+    const webLink = `https://wa.me/${phone}?text=${encodeURIComponent(text)}`;
+
+    // Try opening native app first, then fall back to web link
+    window.location.href = appLink;
+    setTimeout(() => {
+      window.location.href = webLink;
+    }, 600);
+  };
+
   return (
     <div className="app-shell min-h-screen bg-slate-50">
       <header className="topbar">
@@ -19,7 +33,12 @@ function Layout() {
             <NavLink to="/team">Team</NavLink>
             <NavLink to="/contact">Contact</NavLink>
           </nav>
-          <a className="button button-primary nav-button" href="https://wa.me/255685848908" target="_blank" rel="noreferrer">
+          <a
+            className="button button-primary nav-button"
+            href="#"
+            onClick={openWhatsApp}
+            aria-label="Chat with Mdosi on WhatsApp"
+          >
             WhatsApp
           </a>
         </div>
@@ -29,7 +48,12 @@ function Layout() {
         <Outlet />
       </main>
 
-      <a className="whatsapp-float" href="https://wa.me/255685848908" target="_blank" rel="noreferrer">
+      <a
+        className="whatsapp-float"
+        href="#"
+        onClick={openWhatsApp}
+        aria-label="Open WhatsApp chat"
+      >
         💬 Chat WhatsApp
       </a>
 

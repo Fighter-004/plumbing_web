@@ -124,7 +124,16 @@ h1 {
   border-radius: 999px;
   box-shadow: 0 20px 35px rgba(0, 0, 0, 0.12);
   font-weight: 700;
-  z-index: 20;
+  z-index: 9999;
+  pointer-events: auto;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.6rem;
+}
+
+.whatsapp-float:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 26px 40px rgba(0,0,0,0.18);
 }
 
 .hero-section {

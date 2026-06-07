@@ -5,7 +5,7 @@ const About = () => {
         <div className="section-heading">
           <p className="eyebrow">About Us</p>
           <h2>Mdosi Plumbing Service - Trusted Plumbing in Zanzibar</h2>
-          <p>Huduma za kitaalamu kwa nyumba, hoteli, migahawa, ofisi, na majengo ya biashara. Tunafanya kazi kwa haraka, kwa uadilifu, na kwa ubora wa juu.</p>
+          <p>Professional plumbing services for homes, hotels, restaurants, offices, and commercial buildings. We work quickly, honestly, and with high-quality standards.</p>
         </div>
 
         <div className="about-grid">
@@ -35,17 +35,17 @@ const About = () => {
         <section className="section">
           <div className="section-heading">
             <p className="eyebrow">Company Experience</p>
-            <h2>Huduma za Mabomba kwa Uzoefu na Uadilifu</h2>
-            <p>Kazi zetu zinazingatia uvumilivu, usalama, na matokeo ya kudumu. Tunasaidia wateja kupata suluhisho bora na kutumia teknolojia ya kisasa ya plumbing.</p>
+            <h2>Experienced and Trustworthy Plumbing Services</h2>
+            <p>Our work focuses on durability, safety, and long-lasting results. We help customers find the best solutions using modern plumbing technologies.</p>
           </div>
           <div className="card-grid">
             <article className="card">
               <h3>Customer Trust</h3>
-              <p>Wateja wetu wanatupa alama ya juu kwa kuaminika, uwazi wa bei, na matokeo yenye tija.</p>
+              <p>Our customers rate us highly for reliability, transparent pricing, and effective results.</p>
             </article>
             <article className="card">
               <h3>Professional Tools</h3>
-              <p>Tunatumia vifaa vya kisasa vya plumbing kwa matengenezo ya bomba, uchunguzi wa uvujaji, na ufungaji.</p>
+              <p>We use modern plumbing equipment for repairs, leak detection, and installations.</p>
             </article>
           </div>
         </section>

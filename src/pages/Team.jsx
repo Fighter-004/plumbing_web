@@ -2,17 +2,17 @@ const team = [
   {
     name: 'Suleiman Ussi Vuai (Mdosi)',
     role: 'Founder & Lead Plumber',
-    bio: 'Anaongoza mradi, kuhakikisha ubora, na kusimamia huduma zote za mabomba kwa wateja.'
+    bio: 'Leads projects, ensures quality, and oversees all plumbing services for customers.'
   },
   {
     name: 'Mustafa Ussi Vuai (Breeze)',
     role: 'Assistant Manager',
-    bio: 'Anaisaidia operesheni za kila siku, huduma kwa wateja, na usimamizi wa timu.'
+    bio: 'Supports daily operations, customer service, and team supervision.'
   },
   {
     name: 'Muhamad (Villa)',
     role: 'Assistant Technician',
-    bio: 'Mtaalamu wa ufungaji na matengenezo shambani, anasaidia kazi za uwanja kila siku.'
+    bio: 'Assists with installations and repairs, handling field operations and maintenance.'
   }
 ];
 
@@ -22,8 +22,8 @@ const Team = () => {
       <div className="container">
         <div className="section-heading">
           <p className="eyebrow">Team</p>
-          <h2>Watu wa Kuaminiwa wa Mdosi Plumbing</h2>
-          <p>Timuzetu inashirikiana kwa umoja, ujuzi, na umakini kuhakikisha huduma za plumbing zinakamilika kwa wakati.</p>
+          <h2>Mdosi Plumbing — Trusted Team</h2>
+          <p>Our team works together with skill and care to deliver reliable plumbing services on time.</p>
         </div>
 
         <div className="card-grid">

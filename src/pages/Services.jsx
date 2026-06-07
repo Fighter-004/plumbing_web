@@ -2,52 +2,52 @@ const services = [
   {
     icon: '🚨',
     title: 'Emergency Plumbing',
-    description: 'Huduma ya dharura kwa bomba lililovunjika, uvujaji, au mifereji iliyoziba.'
+    description: 'Emergency response for burst pipes, leaks, or blocked drains.'
   },
   {
     icon: '🔧',
     title: 'Pipe Installation',
-    description: 'Ufungaji na ukarabati wa mabomba kwa nyumba, ofisi, hoteli na biashara.'
+    description: 'Installation and repair of piping for homes, offices, hotels, and businesses.'
   },
   {
     icon: '🛁',
     title: 'Bathroom Plumbing',
-    description: 'Ufunga choo, bafu, miguu ya maji, na miradi ya mabafu.'
+    description: 'Installations and repairs for toilets, showers, sinks, and bathroom plumbing systems.'
   },
   {
     icon: '🍽️',
     title: 'Kitchen Plumbing',
-    description: 'Ufunga sinki, bomba la jikoni, na miundo ya maji ya jikoni.'
+    description: 'Sink installation, kitchen piping, and kitchen water system services.'
   },
   {
     icon: '🔍',
     title: 'Leak Detection',
-    description: 'Uchunguzi wa uvujaji wa bomba, shinikizo, na matatizo yaliyofichwa.'
+    description: 'Detection of hidden leaks, pressure issues, and pipe faults.'
   },
   {
     icon: '🚰',
     title: 'Drain Cleaning',
-    description: 'Usafi wa mifereji, choo cha mkononi na mifereji ya maji taka.'
+    description: 'Cleaning and unblocking drains, sinks, and sewer lines.'
   },
   {
     icon: '♨️',
     title: 'Water Heater Services',
-    description: 'Ufungaji, matengenezo, na hatua za kurekebisha maji moto.'
+    description: 'Installation, maintenance, and repairs for water heaters.'
   },
   {
     icon: '🏢',
     title: 'Commercial Plumbing',
-    description: 'Huduma kwa hoteli, migahawa, ofisi, na biashara kubwa Zanzibar.'
+    description: 'Commercial plumbing services for hotels, restaurants, offices, and large businesses.'
   },
   {
     icon: '⚙️',
     title: 'Pump Installation',
-    description: 'Ufungaji wa pampu, miundo ya tanki, na mifumo ya shinikizo la maji.'
+    description: 'Pump installation, tank setups, and water pressure system installation.'
   },
   {
     icon: '🛠️',
     title: 'Plumbing Maintenance',
-    description: 'Ukaguzi wa kawaida, matengenezo, na kuzuia hitilafu za bomba.'
+    description: 'Routine inspections, maintenance, and preventive plumbing repairs.'
   }
 ];
 
@@ -57,8 +57,8 @@ const Services = () => {
       <div className="container">
         <div className="section-heading">
           <p className="eyebrow">Services</p>
-          <h2>Huduma Zetu za Plumbing</h2>
-          <p>Huduma kamili za plumbing kwa nyumba, hoteli, ofisi, na biashara Zanzibar.</p>
+          <h2>Our Services</h2>
+          <p>We provide a wide range of professional plumbing services to meet your needs.</p>
         </div>
         <div className="card-grid">
           {services.map((service) => (
