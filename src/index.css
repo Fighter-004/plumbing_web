@@ -34,6 +34,11 @@ textarea {
 }
 
 .container {
+  width: min(1180px, calc(100% - 2rem));
+  margin: 0 auto;
+}
+
+.container {
   width: min(1120px, calc(100% - 2rem));
   margin: 0 auto;
 }
@@ -67,6 +72,94 @@ textarea {
   object-fit: cover;
   border-radius: 18px;
   border: 2px solid rgba(255, 255, 255, 0.2);
+}
+
+.main-nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.main-nav a {
+  color: white;
+  padding: 0.55rem 0.75rem;
+  border-radius: 999px;
+  transition: background 0.2s ease;
+}
+
+.main-nav a.active,
+.main-nav a:hover {
+  background: rgba(255, 255, 255, 0.16);
+}
+
+.nav-button {
+  min-width: 140px;
+}
+
+.mobile-menu-button {
+  display: none;
+  background: transparent;
+  color: white;
+  border: none;
+  font-size: 1.45rem;
+  cursor: pointer;
+}
+
+.mobile-nav-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.35);
+  z-index: 9999;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding: 1rem;
+}
+
+.mobile-nav-panel {
+  background: white;
+  border-radius: 22px;
+  box-shadow: 0 24px 50px rgba(15, 76, 129, 0.15);
+  width: min(320px, 100%);
+  padding: 1rem;
+  display: grid;
+  gap: 0.75rem;
+}
+
+.mobile-nav-panel a {
+  display: block;
+  padding: 0.9rem 1rem;
+  border-radius: 18px;
+  color: #0f4c81;
+  font-weight: 700;
+  background: #f5f9ff;
+}
+
+.mobile-nav-panel a.active,
+.mobile-nav-panel a:hover {
+  background: #e8f4ff;
+}
+
+@media (max-width: 720px) {
+  .topbar {
+    position: relative;
+  }
+
+  .mobile-menu-button {
+    display: inline-flex;
+    position: absolute;
+    right: 1rem;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+
+  .main-nav {
+    display: none !important;
+  }
+
+  .nav-button {
+    display: none !important;
+  }
 }
 
 .eyebrow {
@@ -134,6 +227,144 @@ h1 {
 .whatsapp-float:hover {
   transform: translateY(-4px);
   box-shadow: 0 26px 40px rgba(0,0,0,0.18);
+}
+
+.whatsapp-options-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.45);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 10000;
+  padding: 1rem;
+}
+
+.whatsapp-options-panel {
+  width: min(460px, 100%);
+  background: white;
+  border-radius: 24px;
+  padding: 2rem;
+  box-shadow: 0 28px 50px rgba(15, 76, 129, 0.18);
+  text-align: center;
+}
+
+.whatsapp-options-panel h3 {
+  margin: 0 0 0.75rem;
+  font-size: 1.35rem;
+  color: #102a43;
+}
+
+.whatsapp-options-panel p {
+  margin: 0 0 1.5rem;
+  color: #475569;
+}
+
+.whatsapp-options-list {
+  display: grid;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.whatsapp-option-card {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 1rem;
+  align-items: center;
+  background: linear-gradient(180deg, #ffffff 0%, #f4f9ff 100%);
+  padding: 1.35rem 1.25rem;
+  border-radius: 24px;
+  border: 1px solid rgba(15, 76, 129, 0.12);
+  color: #102a43;
+  text-decoration: none;
+  box-shadow: 0 24px 45px rgba(15, 76, 129, 0.08);
+  transition: transform 0.2s ease;
+}
+
+.whatsapp-option-card:hover {
+  transform: translateY(-2px);
+}
+
+.whatsapp-option-card-secondary {
+  background: linear-gradient(180deg, #ffffff 0%, #e8f4ff 100%);
+}
+
+.whatsapp-option-icon {
+  width: 54px;
+  height: 54px;
+  display: grid;
+  place-items: center;
+  border-radius: 18px;
+  background: #0f4c81;
+  color: white;
+  font-size: 1.5rem;
+}
+
+.whatsapp-option-card h4 {
+  margin: 0 0 0.35rem;
+  font-size: 1.05rem;
+}
+
+.whatsapp-option-card p {
+  margin: 0;
+  color: #475569;
+}
+
+.whatsapp-options-close {
+  background: transparent;
+  border: none;
+  color: #475569;
+  font-weight: 700;
+  cursor: pointer;
+  padding: 0.75rem 1rem;
+}
+
+.whatsapp-options-header {
+  margin-bottom: 1.5rem;
+}
+
+.whatsapp-options-header h3 {
+  font-size: 1.5rem;
+  margin: 0.5rem 0 0.5rem;
+}
+
+.whatsapp-options-description {
+  margin: 0;
+  color: #475569;
+  line-height: 1.6;
+}
+
+.whatsapp-options-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.whatsapp-options-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.45);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 10000;
+  padding: 1rem;
+}
+
+.whatsapp-options-panel {
+  width: min(560px, 100%);
+  background: white;
+  border-radius: 28px;
+  padding: 2rem;
+  box-shadow: 0 28px 50px rgba(15, 76, 129, 0.18);
+  text-align: left;
+}
+
+@media (max-width: 720px) {
+  .whatsapp-options-row {
+    grid-template-columns: 1fr;
+  }
 }
 
 .hero-section {

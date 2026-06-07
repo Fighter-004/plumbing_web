@@ -23,7 +23,7 @@ const Contact = () => {
           <div className="section-banner">
             <h3>Emergency Service</h3>
             <p>24/7 emergency response for burst pipes, leaks, and blocked drains.</p>
-          </div>http://localhost:5173/
+          </div>
         </div>
         <div className="contact-card">
           <h3>Send a Message</h3>
