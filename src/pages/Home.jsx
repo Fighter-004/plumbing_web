@@ -1,4 +1,8 @@
 const Home = () => {
+  const dialNumber = () => {
+    window.location.href = 'tel:+255685848908';
+  };
+
   return (
     <section>
       <div className="container hero-section">
@@ -10,7 +14,7 @@ const Home = () => {
               We provide fast, reliable, and professional plumbing services for homes, hotels, offices, and businesses across Zanzibar.
             </p>
             <div className="hero-actions">
-              <a className="button button-primary" href="tel:+255685848908">Call Now</a>
+              <a className="button button-primary" href="tel:+255685848908" onClick={dialNumber}>Call Now</a>
               <a
                 className="button button-secondary"
                 href="https://wa.me/255685848908?text=Hello%20Mdosi"
@@ -94,7 +98,7 @@ const Home = () => {
             <p>Send us a message or call now for emergency repairs or scheduled work.</p>
           </div>
           <div className="hero-actions">
-            <a className="button button-primary" href="tel:+255685848908">Call Now</a>
+            <a className="button button-primary" href="tel:+255685848908" onClick={dialNumber}>Call Now</a>
             <a className="button button-secondary" href="/contact">Contact Us</a>
           </div>
         </section>
